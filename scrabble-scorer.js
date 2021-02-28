@@ -86,7 +86,7 @@ let scrabbleScore = function(word){
   for(let i = 0; i<word.length;i++){
     letterPoints += Number(newPointStructure[word[i]])
   }
-  return `Score for '${word}' : ${letterPoints}`
+  return letterPoints
 } 
 
 let simpleScoreObj = {
