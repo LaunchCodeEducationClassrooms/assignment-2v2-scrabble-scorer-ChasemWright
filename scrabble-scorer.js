@@ -12,7 +12,7 @@ const oldPointStructure = {
   10: ['Q', 'Z']
 };
 
- let wordSave = input.question("Let's play some scrabble! \n\nEnter a word: ");
+ let wordSave = ''
 
 function oldScrabbleScorer(word) {
 	word = word.toUpperCase();
@@ -123,6 +123,7 @@ function scorerPrompt() {
 
 
 function runProgram() {
+  wordSave = input.question("Let's play some scrabble! \n\nEnter a word: ");
    initialPrompt()
 }
 
