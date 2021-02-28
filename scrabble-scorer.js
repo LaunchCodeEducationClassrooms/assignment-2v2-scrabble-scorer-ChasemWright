@@ -47,7 +47,7 @@ function initialPrompt() {
   word = word.toUpperCase()
   simpleScoreArray = word.split('');
   letterPoints = `Points for ${word}: ${simpleScoreArray.length}`
-  return `Score for '${word}' : ${letterPoints}`
+  return letterPoints
 };
 
 function vowelBonusScore(word){
