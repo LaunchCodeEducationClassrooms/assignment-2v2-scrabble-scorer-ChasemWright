@@ -61,7 +61,7 @@ function vowelBonusScore(word){
       letterPoints += 1
     }
   }
-  return `Score for '${word}' : ${letterPoints}`
+  return letterPoints
 }
 
 
