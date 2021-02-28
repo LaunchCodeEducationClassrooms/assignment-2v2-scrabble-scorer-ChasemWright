@@ -46,7 +46,7 @@ function initialPrompt() {
  function simpleScore(word){
   word = word.toUpperCase()
   simpleScoreArray = word.split('');
-  letterPoints = `Points for ${word}: ${simpleScoreArray.length}`
+  letterPoints = simpleScoreArray.length
   return letterPoints
 };
 
@@ -68,8 +68,8 @@ function vowelBonusScore(word){
 function transform(oldPointStructure) {
   let newPointObj = {}
   for(item in oldPointStructure){
-    for(let i = 0;i<oldPointStructure[item].length;i++){
-     newPointObj[oldPointStructure[Number(item)][i].toLowerCase()] = item
+    for(let i = 0;i<oldPointStructure[Number(item)].length;i++){
+     newPointObj[oldPointStructure[Number(item)][i].toLowerCase()] = Number(item)
     }
   }
   
